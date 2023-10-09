@@ -19,3 +19,13 @@ This project demonstrates how to set up a practical stream processing lab using 
 ## Technologies Used:
 
 **PySpark**: PySpark is a Python library that provides a high-level API for distributed data processing using Apache Spark.
+
+## Files:
+<img align='right' src="https://github.com/momedhat/Practical-PySpark-Streaming/blob/main/img.png" width="400">
+<br>
+
+* **InputStream:** <br> This represents a continuous data source, likely a stream of CSV files containing stock data for the KOSPI index. These files are being updated and added to every second, which suggests real-time or near-real-time data ingestion.
+
+* **OutputStream:** <br> This is where the processed data is being stored. It's mentioned that the data is stored as partitions, which suggests that PySpark is organizing the data into partitions for efficient storage and processing. <br> These partitions could be stored in a distributed file system like HDFS (Hadoop Distributed File System) or a cloud-based storage system like AWS S3 or Azure Blob Storage.
+
+* **CheckPoints:** <br> In PySpark, checkpoints are a mechanism used for fault tolerance and optimization. They allow you to save the state of a streaming application or a resilient distributed dataset (RDD) to a reliable distributed file system.
